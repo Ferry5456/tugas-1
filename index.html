@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Ferryansah</title>
-    <!-- Font Awesome untuk Ikon Media Sosial -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -44,7 +43,6 @@
             min-height: 100vh;
         }
 
-        /* --- NAVBAR STYLES --- */
         .navbar {
             position: fixed;
             top: 0;
@@ -109,14 +107,12 @@
             height: 40px;
         }
 
-        /* --- CONTAINER STYLES --- */
         .container {
             max-width: 850px;
             margin: 20px auto 60px;
             padding: 0 20px;
         }
 
-        /* --- HERO / PROFILE SECTION --- */
         .profile-card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -162,7 +158,6 @@
             margin-bottom: 25px;
         }
 
-        /* --- BUTTONS & ACTIONS --- */
         .action-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -189,7 +184,6 @@
             box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
         }
 
-        /* --- SOCIAL ICON BAR --- */
         .social-icons-bar {
             display: flex;
             gap: 12px;
@@ -216,7 +210,6 @@
             transform: translateY(-3px);
         }
 
-        /* --- CONTENT SECTIONS --- */
         section {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -283,7 +276,6 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar">
         <a href="#" class="logo">Ferryansah<span>.dev</span></a>
         <ul class="nav-links">
@@ -291,7 +283,7 @@
             <li><a href="#favorit">Favorit</a></li>
             <li><a href="#kontak">Kontak</a></li>
             <li>
-                <button class="theme-toggle-btn" onclick="toggleTheme()" id="themeBtn" aria-label="Ganti Tema">
+                <button class="theme-toggle-btn" onclick="toggleTheme()" id="themeBtn">
                     <i class="fa-solid fa-moon" id="themeIcon"></i>
                 </button>
             </li>
@@ -299,7 +291,6 @@
     </nav>
 
     <div class="container">
-        <!-- HEADER / TENTANG SAYA CARD -->
         <div class="profile-card" id="tentang">
             <div class="profile-header">
                 <img src="Ferry.jpeg" alt="Foto Ferryansah" class="profile-img" onerror="this.src='https://via.placeholder.com/110'">
@@ -309,26 +300,22 @@
                 </div>
             </div>
 
-            <!-- Teks Deskripsi -->
             <p class="about-text">
                 Siswa kelas 11 jurusan Rekayasa Perangkat Lunak (RPL) di SMKN 6 Kota Tangerang Selatan. Antusias membangun aplikasi web interaktif, aplikasi mobile Android (Jetpack Compose), serta arsitektur basis data yang rapi dan efisien.
             </p>
 
-            <!-- Tombol Aksi -->
             <div class="action-buttons">
                 <a href="#favorit" class="btn-gradient">
                     <i class="fa-solid fa-circle-play"></i> Musik & Video Favorit
                 </a>
             </div>
 
-            <!-- Ikon Sosial Media -->
             <div class="social-icons-bar">
                 <a href="https://www.linkedin.com/in/ferryansah-undefined-a7aaa8448/" target="_blank" class="icon-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://www.instagram.com/str67890?mdxt=MXVidHQ4bWQ2MTd3cg==" target="_blank" class="icon-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
 
-        <!-- BAGIAN FAVORIT (MUSIK & VIDEO) -->
         <div id="favorit">
             <section>
                 <h2><i class="fa-solid fa-music"></i> Musik Favorit Saya</h2>
@@ -337,7 +324,7 @@
                     <iframe 
                         src="https://www.youtube-nocookie.com/embed/p7sNhzs8HpY" 
                         title="The Flowers There Are Always in Full Bloom" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
                     </iframe>
                 </div>
@@ -351,8 +338,9 @@
                 <p><strong>[Project Moon fan film] Ludicrum/ 神聖喜劇</strong></p>
                 <div class="video-container">
                     <iframe 
-                        src="https://www.youtube-nocookie.com/embed/AEc3tbOKn4o" 
+                        src="https://www.youtube.com/embed/AEc3tbOKn4o" 
                         title="[Project Moon fan film] Ludicrum/ 神聖喜劇" 
+                        referrerpolicy="strict-origin-when-cross-origin"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         allowfullscreen>
                     </iframe>
@@ -363,13 +351,12 @@
             </section>
         </div>
 
-        <!-- BAGIAN KONTAK -->
         <section id="kontak" style="text-align: center;">
             <h2><i class="fa-solid fa-paper-plane"></i> Hubungi Saya</h2>
             <p style="color: var(--text-muted); margin-bottom: 20px;">Silakan terhubung dengan saya melalui media sosial di bawah ini:</p>
             <div class="social-icons-bar" style="justify-content: center;">
-                <a href="https://www.linkedin.com/in/ferryansah-undefined-a7aaa8448/" target="_blank" class="icon-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/str67890?mdxt=MXVidHQ4bWQ2MTd3cg==" target="_blank" class="icon-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ferryansah-undefined-a7aaa8448/" target="_blank" class="icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/str67890?mdxt=MXVidHQ4bWQ2MTd3cg==" target="_blank" class="icon-btn"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </section>
     </div>
